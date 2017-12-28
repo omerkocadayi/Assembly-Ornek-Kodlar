@@ -19,10 +19,10 @@ start:
     lea dx,hello
     int 21h
 
-; interrupt'lar kutuphane gibi dusunulebilir.
+; interrupt'lar hazir tanimli fonksiyonlar olarak dusunulebilir.
 ; 21h kutuphanesinden 01 nolu, 09 nolu fonksiyonu kullan gibi..
-; fonksiyon numarasini ah ile belirtiyoruz.
-; farkli interruptlara internet uzerinden bakabilirsinizi..
+; kutuphane numarasini int, fonksiyon numarasini ah ile belirtiyoruz.
+; farkli interruptlara internet uzerinden ulasabilirsiniz..
     
     mov ax, 4c00h
     int 21h  
