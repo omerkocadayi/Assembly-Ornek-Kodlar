@@ -20,6 +20,9 @@ start:
         inc bx      ; bx'i 1 artýr
         cmp ax,5    ; ax ile 5'i karsilastir
         ja dongu    ; ax 5'ten buyukse donguye'git (jump if above)
+        
+    mov ax, 4c00h
+    int 21h        
      
 ends
 end start
