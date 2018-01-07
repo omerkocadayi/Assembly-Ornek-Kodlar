@@ -17,7 +17,7 @@ ana proc far          ; proc far -> farkli segmentlerden cagrilabilir
     call duz:
     call ters:
     
-    duz proc near     ; proc far -> farkli segmentlerden cagrilamaz
+    duz proc near     ; proc near -> farkli segmentlerden cagrilamaz
         lea si,str1   ; source index (kaynak)
         lea di,str2   ; defination index (hedef)
         mov cx,9
@@ -25,7 +25,7 @@ ana proc far          ; proc far -> farkli segmentlerden cagrilabilir
     duz endp
     
     
-    ters proc near      ; proc far -> farkli segmentlerden cagrilamaz                          
+    ters proc near      ; proc near -> farkli segmentlerden cagrilamaz                          
         lea si,str1+8   ; source index (kaynak)
         lea di,str3+8   ; defination index (hedef)
         mov cx,9  
@@ -44,4 +44,4 @@ end ana
 ;kopyalama turunu girmezsek, default olarak cld ile islem yapar    
 ;movsb -> mov islemini byte olarak gerceklestir..
 ;movsw -> mov islemini word olarak gerceklestir..
-;rep   -> MOVSB,MOVSW,LODSB,LODSW,STOSB,STOSW komutlar˝ icin dongu ifadesi
+;rep   -> MOVSB,MOVSW,LODSB,LODSW,STOSB,STOSW komutlar√Ω icin dongu ifadesi
