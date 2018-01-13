@@ -44,4 +44,4 @@ end ana
 ;kopyalama turunu girmezsek, default olarak cld ile islem yapar    
 ;movsb -> mov islemini byte olarak gerceklestir..
 ;movsw -> mov islemini word olarak gerceklestir..
-;rep   -> MOVSB,MOVSW,LODSB,LODSW,STOSB,STOSW komutlarý icin dongu ifadesi
+;rep   -> repeat.. MOVSB,MOVSW,LODSB,LODSW,STOSB,STOSW komutlari icin dongu ifadesi
