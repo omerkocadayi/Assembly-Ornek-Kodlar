@@ -20,8 +20,7 @@ ana proc far
     lea dx,altsatir
     mov ah,09h
     int 21h         ;alt satira gectik
-              
-              
+                       
     mov al,'q'
     mov bl,'k'
     lea dx,str
@@ -43,8 +42,4 @@ ana proc far
 ends
 end ana 
 
-;altsatir db  0ah,0dh,24h  ->   bu tanimi ekrana cikti
-;verirken bir alt satira gecmek icin kullaniyoruz 
-
-   
-
+;altsatir db  0ah,0dh,24h  -> bunu ekrana cikti verirken bir alt satira gecmek icin kullaniyoruz
